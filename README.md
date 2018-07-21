@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## Shandip Bhangal
 
-You can use the [editor on GitHub](https://github.com/sbhangal/sbhangal.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Developer Portfolio Page
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Projects
 
-### Markdown
+#### Face Recognition Website
+Web application to locate faces in images submitted by a user. User may submit a url for a picture that contains a face and the face will be detected.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-	Application built with React, NPM, and PostgreSQL. 
+-	Fully implemented the front and back end, allowing users to register, login, and submit images.
+-	Deployed on Heroku and accessible at https://face-recognition-with-react.herokuapp.com/
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sbhangal/sbhangal.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### Scholar Palace Business Landing Page
+Business Landing page for a fictional online library.			
+-	Clean and simple landing page for users to sign up for more information.
+-	Implemented page using HTML, CSS, Bootstrap, Tachyons, and Google Fonts.
+-	https://sbhangal.github.io/scholar-palace/
