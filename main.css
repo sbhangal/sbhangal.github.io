@@ -1,0 +1,392 @@
+
+HTML, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.body{
+    text-align: center;
+    top: 0%;
+    display: block;
+}
+
+/*General CSS */
+.mainContainer{
+    display: flex;
+}
+
+.centerItem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.contentBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionTitle{
+    font-size: 3.5em;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 1em rgba(187, 165, 165, 0.7);
+    padding: .5em 0em;
+    font-family: cursive;
+    margin: 0em 0em .5em 0em;
+    display: flex;
+    flex: 0 0 100%;
+    top: 0;
+}
+
+.date{
+    font-size: .5em;
+}
+
+.tintBrown{
+    background-image: linear-gradient(gold, orange);
+}
+
+
+/* Bio Container CSS */
+.bioContainer{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(46, 241, 248, 0.8), white);
+    width: 100%;
+}
+
+.topHalf{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.profile_pic{
+    padding: 2em 1em;
+}
+
+.profile_pic img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottomHalf{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 0 rgba(0, 0, 0, 0.4);
+   }
+
+.bioDescription{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2em 1em;
+}
+
+.bioDescription img{
+    width: 1.5em;
+    height: auto;
+    padding: .5em;
+}
+
+.bioDescription a{
+    text-decoration: none;
+}
+
+/*About Me CSS*/
+.about{
+    font-size: 1.5em;
+    width: 100%;
+    padding: 0em 1em 1em 1em;
+}
+
+/* Sidebar CSS */
+
+.sideBar{
+    flex: 0 0 4em;
+    background: rgba(77, 57, 75, 1.00);
+    height: 100vh;
+    color: white;
+    position: sticky !important;
+    top: 0 !important;
+}
+
+.sideBar ul{
+    list-style: none;
+    padding-left: 0em;
+    margin-top: 2em;
+}
+
+.sideBar li{
+    padding: 1em 2em;
+    font-weight: bolder;
+}
+
+.sideBar a{
+    color: white;
+}
+
+.sideBar a:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+
+/*General Card CSS*/
+
+.cardList{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    padding: 3em 0em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    margin: 1em 0em;
+    flex: 0 0 30%;
+}
+
+/*Education Card CSS*/
+.eduCard {
+    font-size: 2.5em;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    padding: 3em 0em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    margin: 1em 0em;
+    flex: 0 0 30%;
+    align-content: center;
+}
+
+.eduCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.eduCard a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*Skill Section CSS*/
+.skillCard{
+    font-size: 2.5em;
+    color: black;
+    font-weight: bolder;
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0em;
+    margin: 1em 0em;
+    flex: 0 0 25%;
+    align-content: center;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;   
+}
+
+/*Project Section CSS*/
+.projCard{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    padding: 1em 0em;
+    margin: 1em 0em;
+    flex: 0 0 30%;
+}
+
+.projCard a img{
+    width: 100%;
+    height: 8em;
+    object-fit: scale-down;
+}
+
+.projCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.projCard a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.projName{
+    font-size: 1.1em;
+}
+.projIngredients{
+    font-size: .8em;
+}
+
+.projDate{
+    font-size: .8em;
+}
+
+/*Contact Me CSS*/
+.contactCard {
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    flex: 0 0 30%;
+    background-color: white;
+    padding: 1em;
+}
+
+.contact-form-body{
+    margin: 0;
+    padding: 1.5em;
+    text-align: center;
+    background-image: url(images/4k-wallpaper-abstract-abstract-expressionism-1266808.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    flex: 1 1 100%;
+}
+
+.contact-title{
+    margin-top: 1em;
+    color: black;
+    transition: all 4s ease-in;
+}
+
+.contact-title h1{
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.contact-title h2{
+    font-size: 1em;
+}
+
+form{
+    margin-top: 1em;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: .1em solid black;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: black;
+}
+
+input{
+    height: 1em;
+}
+
+form .submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: black;
+    font-weight: bold;
+    padding: .2em;
+    padding-bottom: 1em;
+}
+
+form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.card::placeholder{
+    text-overflow: ellipsis;
+}
+
+.jobBox{
+    font-size: 2.5em;
+}
+
+/*Experience CSS*/
+.jobBox{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.jobDesc {
+    padding: 1em 0em 0em 1em;
+}
+
+.jobDescHeader:hover {
+    cursor: pointer;
+    background-color: rgba(187, 165, 165, 0.4)
+}
+
+.jobItems{
+    visibility: hidden;
+}
+
+.jobItems div{
+    padding: .5em 1em 0em 0em;
+    font-size: .8em;
+}
+
+.companyName{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.jobTitle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media(max-width: 992px){
+    .card{
+        flex: 0 0 30%;
+    }
+    .skillCard{
+        flex: 0 0 30%;
+    }
+}
+
+@media(max-width: 768px){
+    .card{
+        flex: 0 0 50%;
+    }
+    .skillCard{
+        flex: 0 0 50%;
+    }
+}
+
+@media(max-width: 480px){
+    .card{
+        flex: 0 0 100%;
+    }
+}
+
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; }
