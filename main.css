@@ -3,17 +3,17 @@ HTML, body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    width: 100%;
 }
 
-.body{
-    text-align: center;
-    top: 0%;
-    display: block;
-}
 
 /*General CSS */
 .mainContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+    width: 100vw;
+    height: 400vh;
 }
 
 .centerItem{
@@ -24,6 +24,10 @@ HTML, body {
 }
 
 .contentBox{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: end;
     display: flex;
     flex-wrap: wrap;
 }
@@ -110,6 +114,10 @@ HTML, body {
 /* Sidebar CSS */
 
 .sideBar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: end;
     flex: 0 0 4em;
     background: rgba(77, 57, 75, 1.00);
     height: 100vh;
@@ -145,7 +153,7 @@ HTML, body {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -324,19 +332,18 @@ form .submit:hover{
     text-overflow: ellipsis;
 }
 
-.jobBox{
-    font-size: 2.5em;
-}
-
 /*Experience CSS*/
 .jobBox{
+    font-size: 2.5em;
     display: flex;
     justify-content: flex-start;
-    padding: 1em;
+    overflow-x: hidden;
 }
 
 .jobDesc {
-    padding: 1em 0em 0em 1em;
+    width: 60vw;
+    padding-left: 5vw;
+
 }
 
 .jobDescHeader:hover {
@@ -345,12 +352,14 @@ form .submit:hover{
 }
 
 .jobItems{
-    visibility: hidden;
+    display: none;
+
 }
 
 .jobItems div{
-    padding: .5em 1em 0em 0em;
-    font-size: .8em;
+    font-size: .6em;
+    padding: 1vh 0vh;
+
 }
 
 .companyName{
@@ -360,6 +369,13 @@ form .submit:hover{
 
 .jobTitle{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.company img{
+    width: 30vw;
+    height: 45vh;
+    box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.2);
+
 }
 
 
