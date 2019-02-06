@@ -4,16 +4,160 @@ HTML, body {
     padding: 0px;
     border: 0px;
     width: 100%;
+    text-align: center;
+    font-size: 1em;
 }
 
 
 /*General CSS */
 .mainContainer{
+    display: flex;
+}
+
+.mainGrid{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(40, 1fr);
-    width: 100vw;
-    height: 400vh;
+    grid-template-columns: repeat(autofit, 10, 1fr);
+    grid-template-rows: repeat(autofit, 20, 1fr);
+    width: 85vw;
+    height: 100vh;
+    margin-left: 15vw;
+}
+
+.sideBar{
+    position: fixed;
+    background: rgb(36, 157, 238);
+    display: flex;
+    width: 15vw;
+    padding-top: 10vh;
+    height: 100vh;
+    justify-content: center;
+}
+
+.sideBar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sideBar li{
+    padding: 2vh 0;
+    font-weight: bolder;
+}
+
+.sideBar a{
+    color: white;
+}
+
+.sideBar a:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.bioContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    background-image: linear-gradient(rgba(46, 241, 248, 0.8), white);
+    width: 100%;
+    justify-content: center;
+}
+
+.topHalf img{
+    border-radius: 50%;
+    width: 15vw;
+    margin-top: 5vh;
+}
+
+.social-links img{
+    width: 5vw;
+    padding: 1vw;
+    
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.aboutContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.educationContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 10;
+    grid-row-end: 12;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experienceContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 12;
+    grid-row-end: 14;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.awardContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 14;
+    grid-row-end: 16;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobbyContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 16;
+    grid-row-end: 18;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactContainer{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 18;
+    grid-row-end: 20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .centerItem{
@@ -23,15 +167,276 @@ HTML, body {
     width: 50%;
 }
 
-.contentBox{
-    grid-column-start: 2;
-    grid-column-end: end;
-    grid-row-start: 1;
-    grid-row-end: end;
-    display: flex;
-    flex-wrap: wrap;
+
+img{
+    width: 8vw;
+    height: auto;
 }
 
+.sectionTitle{
+    font-size: 3em;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.cardList{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.card {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    padding: 3em 0em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    margin: 1em 0em;
+    flex: 0 0 30%;
+}
+
+.eduCard {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    padding: 1em 0em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    margin: 1em 0em;
+    flex: 0 0 30%;
+    align-content: center;
+}
+
+.eduCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.eduCard a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.skillCard{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
+    padding: 2em 0em;
+    margin: 1em 0em;
+    flex: 0 0 25%;
+    align-self: baseline;
+}
+
+.projCard{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    padding: 1em 0em;
+    margin: 1em 0em;
+    flex: 0 0 30%;
+}
+
+.projCard a img{
+    width: 100%;
+    height: 10vh;
+    object-fit: scale-down;
+}
+
+.projCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.projCard a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.projName{
+    font-size: 1.1em;
+}
+.projIngredients{
+    font-size: .8em;
+}
+
+.projDate{
+    font-size: .7em;
+}
+
+.jobBox{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    padding: 5vh 0;
+}
+
+
+.jobDescHeader:hover {
+    cursor: pointer;
+    background-color: rgba(187, 165, 165, 0.4)
+}
+
+.jobItems{
+    display: none;
+}
+
+.jobItems div{
+    font-size: .8em;
+    padding: 1vh 0vh;
+
+}
+
+.companyName{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.company {
+    width: 100%;
+    justify-content: center;
+
+}
+
+.jobTitle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.company img{
+    width: 20vw;
+
+}
+
+.contactCard {
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    flex: 0 0 100%;
+    background-color: white;
+    padding: 1em 0em;
+}
+
+.contact-form-body{
+    padding: 1.5em 0;
+    text-align: center;
+    background-image: url(images/contact_wallpaper.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    flex: 0 0 100%;
+}
+
+.fix-width{
+    width: 100%;
+    margin: 0 5vw;
+}
+
+.contact-title{
+    margin-top: 1em;
+    color: black;
+    transition: all 4s ease-in;
+}
+
+.contact-title h1{
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.contact-title h2{
+    font-size: 1em;
+}
+
+form{
+    margin-top: 1em;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: .1em solid black;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: black;
+}
+
+input{
+    height: 1em;
+}
+
+form .submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.width-full{
+    width: 100%;
+}
+
+.card::placeholder{
+    text-overflow: ellipsis;
+}
+
+
+@media(max-width: 992px){
+    .card{
+        flex: 0 0 30%;
+    }
+    .skillCard{
+        flex: 0 0 30%;
+    }
+}
+
+@media(max-width: 768px){
+    .card{
+        flex: 0 0 50%;
+    }
+    .skillCard{
+        flex: 0 0 50%;
+    }
+}
+
+@media(max-width: 480px){
+    .card{
+        flex: 0 0 100%;
+    }
+}
+
+
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } 
+input:-moz-placeholder { text-overflow: ellipsis; }
+
+/*
 .sectionTitle{
     font-size: 3.5em;
     font-weight: bolder;
@@ -51,15 +456,6 @@ HTML, body {
 
 .tintBrown{
     background-image: linear-gradient(gold, orange);
-}
-
-
-/* Bio Container CSS */
-.bioContainer{
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(46, 241, 248, 0.8), white);
-    width: 100%;
 }
 
 .topHalf{
@@ -104,26 +500,10 @@ HTML, body {
     text-decoration: none;
 }
 
-/*About Me CSS*/
 .about{
     font-size: 1.5em;
     width: 100%;
     padding: 0em 1em 1em 1em;
-}
-
-/* Sidebar CSS */
-
-.sideBar{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: end;
-    flex: 0 0 4em;
-    background: rgba(77, 57, 75, 1.00);
-    height: 100vh;
-    color: white;
-    position: sticky !important;
-    top: 0 !important;
 }
 
 .sideBar ul{
@@ -146,9 +526,6 @@ HTML, body {
     cursor: pointer;
 }
 
-
-/*General Card CSS*/
-
 .cardList{
     display: flex;
     flex-grow: 1;
@@ -170,7 +547,6 @@ HTML, body {
     flex: 0 0 30%;
 }
 
-/*Education Card CSS*/
 .eduCard {
     font-size: 2.5em;
     color: black;
@@ -197,7 +573,6 @@ HTML, body {
 }
 
 
-/*Skill Section CSS*/
 .skillCard{
     font-size: 2.5em;
     color: black;
@@ -213,7 +588,6 @@ HTML, body {
     text-align: center;   
 }
 
-/*Project Section CSS*/
 .projCard{
     font-size: 1.5em;
     color: black;
@@ -252,7 +626,6 @@ HTML, body {
     font-size: .8em;
 }
 
-/*Contact Me CSS*/
 .contactCard {
     font-size: 1em;
     color: white;
@@ -332,7 +705,6 @@ form .submit:hover{
     text-overflow: ellipsis;
 }
 
-/*Experience CSS*/
 .jobBox{
     font-size: 2.5em;
     display: flex;
@@ -378,31 +750,5 @@ form .submit:hover{
 
 }
 
+*/
 
-@media(max-width: 992px){
-    .card{
-        flex: 0 0 30%;
-    }
-    .skillCard{
-        flex: 0 0 30%;
-    }
-}
-
-@media(max-width: 768px){
-    .card{
-        flex: 0 0 50%;
-    }
-    .skillCard{
-        flex: 0 0 50%;
-    }
-}
-
-@media(max-width: 480px){
-    .card{
-        flex: 0 0 100%;
-    }
-}
-
-input[placeholder] { text-overflow: ellipsis; }
-::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
-input:-moz-placeholder { text-overflow: ellipsis; }
